@@ -31935,13 +31935,6 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors)
-"xzv" = (
-/obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "mason"
-	},
-/turf/closed,
-/area/rogue/indoors/town/dwarfin)
 "xzN" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled,
 /turf/open/floor/rogue/dirt/road,
@@ -310128,7 +310121,7 @@ xdq
 wVI
 wbg
 wVI
-xzv
+urH
 vmw
 vmw
 vmw
