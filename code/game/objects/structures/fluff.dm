@@ -299,6 +299,9 @@
 	icon_state = "border"
 	passcrawl = FALSE
 
+/obj/structure/fluff/railing/border/inverted
+	icon_state = "borderinv"
+
 /obj/structure/fluff/railing/fence
 	name = "palisade"
 	desc = ""
@@ -750,6 +753,18 @@
 	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
 	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
 
+/obj/structure/fluff/alch
+	name = "alchemical lab"
+	desc = ""
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "alch"
+	density = TRUE
+	anchored = TRUE
+	layer = BELOW_OBJ_LAYER
+	blade_dulling = DULLING_BASHCHOP
+	max_integrity = 450
+	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = list("sound/combat/hits/onmetal/metalimpact (1).ogg", "sound/combat/hits/onmetal/metalimpact (2).ogg")
 
 /obj/structure/fluff/statue
 	name = "statue"
@@ -1117,7 +1132,7 @@
 							*/
 							if(findtext(thegroom.real_name, " of ") || findtext(thegroom.real_name, " the "))
 								surname2use = thegroom.dna.species.random_surname()
-								thegroom.change_name(copytext(thegroom.real_name, 1,index))	
+								thegroom.change_name(copytext(thegroom.real_name, 1,index))
 							else
 								surname2use = copytext(thegroom.real_name, index)
 								thegroom.change_name(copytext(thegroom.real_name, 1,index))
@@ -1285,7 +1300,7 @@
 	icon = 'icons/roguetown/items/natural.dmi'
 	icon_state = "headstake"
 	density = FALSE
-	anchored = TRUE	
+	anchored = TRUE
 	dir = SOUTH
 	var/obj/item/grown/log/tree/stake/stake
 	var/obj/item/bodypart/head/victim
@@ -1299,7 +1314,7 @@
 	stake = locate(/obj/item/grown/log/tree/stake) in parts_list
 
 ///obj/structure/fluff/headstake/Initialize()
-//	. = ..()	
+//	. = ..()
 
 /obj/structure/fluff/headstake/OnCrafted(dirin, user)
 	dir = SOUTH
